@@ -6,25 +6,38 @@ Spec: https://drive.google.com/file/d/1YdGHuwxW4AOitrrfvNO55kCfEAbjpCMl/view?usp
 ## Preparation
 In your original pdm-f24 directory, `git pull` to get new `hw2` directory.
 
-1. To run the code：python map.py
 
+---
+## Usage
+
+```bash
+python map.py
+```
 Filtered point cloud data will be saved to:
  /home/morris/pdm-f24/hw2/filtered_points.npy
  /home/morris/pdm-f24/hw2/filtered_colors.npy
+ 
 A scatter plot image of the filtered point cloud will be saved to:
  /home/morris/pdm-f24/hw2/map.png
 
-2. To run the code：python RRT.py
 
+```bash
+python RRT.py
+```
 Dilation Map: Saved as dilation_map.jpg.
 Intermediate Path Images: Saved in the RRT_Path/ folder.
 Smoothed Path: Saved as smooth_path.npy.
 
-3. To run the code：python navigationcolor.py -f <target_object>
 
+```bash
+python navigationcolor.py -f <target_object>
+```
 Replace <script_name>.py with the name of your script file and <target_object> with one of the following options:
 rack,cushion,sofa,stair,cooktop
 
 The program generates a video file of the agent's navigation and saves it to the video/ directory. The file is named according to the target object, e.g., rack.mp4.
 
-4. To run the code：python bi-rrt22.py
+
+```bash
+python bi-rrt22.py
+```
